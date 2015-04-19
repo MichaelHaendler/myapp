@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
-root 'welcome#index'
+# root 'welcome#index'
 
-get '/zoomy', to: 'welcome#zoomy'
+# get '/zoomy', to: 'welcome#zoomy'
+
+root 'welcome#zoomy'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
