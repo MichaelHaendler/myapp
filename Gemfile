@@ -47,3 +47,5 @@ gem 'rails_12factor', group: :production
 
 gem 'arel', '6.0.0.beta2'
 
+ ruby '2.0.0'
+
