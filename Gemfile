@@ -47,5 +47,7 @@ gem 'rails_12factor', group: :production
 
 gem 'arel', '6.0.0.beta2'
 
+gem 'bootstrap-sass', '~> 3.3.4'
+
  ruby '2.0.0'
 

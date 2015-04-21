@@ -4,61 +4,28 @@ Rails.application.routes.draw do
 
 # get '/zoomy', to: 'welcome#zoomy'
 
-root 'welcome#zoomy'
+# root 'welcome#zoomy'
 
+root 'home#index'
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+get 'user/index'
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+get 'home/index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+post '/calendar', to: 'user#calendar'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+get '/user/report', to: 'user#report'
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+get '/search', to: 'building#test'
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+post '/test_input_helper', to: 'home#test_input_helper'
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+get '/create', to: 'user#create'
 
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+post 'user/create_helper', to: 'user#create_helper'
 
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+post 'user/create_helper', to: 'user#create_helper'
 
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+post 'user/audit_request', to: 'user#audit_request'
+
 end

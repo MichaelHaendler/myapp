@@ -1,0 +1,68 @@
+
+<!--NOTE! this should be done with embedded ruby a la form_for -->
+
+<h1 id="formHeader">Create Account</h1>
+
+	
+<%= form_for @user, url: calendar_path, :html => {:id => "signupForm"} do |f| %>
+
+
+    	<%= f.label :organization, "Organization" %>
+    	<%= f.text_field :organization, :placeholder => "Organization", :class => "form-control" %>
+
+
+    	<%= f.text_field :tax_id, :placeholder => "Tax ID", :class => "form-control"  %>
+      
+      <%= f.label :first_name, "Administrator", :id => "adminLabel" %>
+
+      <%= f.text_field :first_name, :placeholder => "First Name", :class => "form-control" %>
+
+     
+      <%= f.text_field :last_name, :placeholder => "Last Name", :class => "form-control" %>
+
+
+      <%= f.text_field :phone_number, :placeholder => "Phone Number", :class => "form-control" %>
+
+      <%= f.text_field :job_title, :placeholder => "Job Title", :class => "form-control" %>
+
+       
+      <%= f.text_field :email, :placeholder => "Email", :class => "form-control" %>
+
+      
+      <%= f.text_field :confirm_email, :placeholder => "Confirm Email", :class => "form-control" %>
+      
+      <%= f.password_field :password, :placeholder => "Password", :class => "form-control" %>
+
+      
+      <%= f.password_field :password_confirmation, :placeholder => "Password", :class => "form-control" %> 
+
+	<%= f.submit "SUBMIT", :class => "form-control", :id => "submit_button", :class => "form-control"  %>
+
+<!--
+<form id="signupForm">
+
+	<label for="organization">Organization</label>
+	<input name="organization"type="text" id = "organization" class="form-control" placeholder="organization's name">
+	<input type="text" id = "tax_id" class="form-control" placeholder="Tax id">
+	<label for="first_name" id="adminLabel">Administrator</label>
+	<input type="text" id = "first_name" class="form-control" placeholder="First Name">
+	<input type="text" id="last_name" class="form-control" placeholder="Last Name">
+	<input type="text" id = "email_address" class="form-control" placeholder="Email">
+	<input type="text" id = "password" class="form-control" placeholder="Password">
+</form>
+-->
+
+	
+
+	
+
+
+	<!-- <button type="button" id= "submit_button" onclick="create_user();">SUBMIT</button class="form-control"> -->
+
+ <% end %>
+
+
+
+
+
+

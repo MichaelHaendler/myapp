@@ -1,0 +1,275 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+*= require_self
+*= require_tree .
+*/
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+}
+.navbar-default {
+	background-color: white;
+	border: none;
+
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+
+.navbar li { color: #000 } 
+
+nav.navbar.navbar-default{
+	margin-bottom: 0;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+.navbar-default .navbar-nav > li > a.signInNav {
+	background-color: #EB3E4D;
+	color: white;
+	padding-top: 5px;
+	margin-top: 9px;
+	padding-bottom: 5px;
+	border-radius: 3px;
+	color: white;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+a.navbar-brand img {
+	height: 120px;
+
+}
+
+
+
+ul.nav  > li > a {
+	color: white;
+	font-family: 'Sanchez', serif;
+}
+
+a.navbar-brand.navItem {
+	color: white;
+	font-family: 'Sanchez', serif;
+}
+
+
+
+ul.nav  > li > a {
+	color: black;
+
+}
+
+a.navbar-brand.navItem {
+	color: black;
+
+}
+
+#landingPage {
+	background-image: image_url('woodtable1.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin-top: -50px;
+}
+
+.landingPageText {
+	color: white;
+	margin: 0 auto;
+	position: relative;
+  top: 50%;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+div.landingPageText h1 {
+	text-align: center;
+}
+
+button.signupButton {
+	background-color: #EB3E4D;
+	border: none; 
+	border-radius: 3px;
+	margin: 0 auto;
+	display: block;
+	padding: 5px;
+	margin-top: 10px;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 15px;
+
+}
+
+a.signInNav {
+	
+}
+
+#signupForm {
+	width: 420px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+#signupForm button {
+	display: block;
+	margin: 0 auto;
+}
+
+#signupForm input {
+	height: 50px;
+}
+
+#adminLabel {
+	margin-top: 15px;
+}
+
+#formHeader {
+	text-align:center;
+	margin-top: 50px;
+}
+
+input#submit_button.form-control {
+	background-color: #EB3E4D;
+	border: none;
+	color: white;
+	padding: 6px;
+	margin-top: 10px;
+	border-radius: 3px;
+	font-size: 1.5em;
+}
+
+div.landingPageParagraphs h1 {
+	text-align: center;
+	margin-top: 25px;
+	font-family: "Letter Gothic Std";
+}
+
+div.landingPageParagraphs p {
+	width: 600px;
+	max-width: 80%;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	font-family: "Roboto";
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h1#calendarHeader {
+	
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 100px;	
+}
+
+div.ui-datepicker-inline {
+	margin: 0 auto;
+	margin-top: 110px;
+}
+
+button#submit_button {
+	margin: 0 auto;
+	margin-top: 50px;
+	display: block;
+}
+
+#reportContainer {
+	margin-top: 100px;
+}
+
+span.highlight {
+	font-weight: bold;
+}
+
+div#reportContainer {
+	font-size: 1.5em;
+}
+
+img.floatLeft {
+	float: left;
+	height: 60px;
+	margin-right: 10px;
+}
+
+#reportTable h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+h1.centerText {
+	text-align: center;
+	margin-top: 50px;
+}
+
+img.imageCenter {
+	margin: 0 auto;
+
+}
+
+#reportTable {
+	margin-top: 100px;
+}
+
+p#first, p#second, p#third {
+	text-align:center;
+}
+
+#result_of_report {
+	display: block;
+	margin: 0 auto;
+}
+
+div.searchWrapper {
+	margin: 30px auto;
+	display: block;
+
+}
+div.searchWrapper input {
+	width: 500px;
+}
+
+div.searchWrapper input, div.searchWrapper button {
+	margin: 0 auto;
+	display: block;
+}
+
+ 

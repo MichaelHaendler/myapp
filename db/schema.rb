@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150419165357) do
+ActiveRecord::Schema.define(version: 20150421215904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,44 @@ ActiveRecord::Schema.define(version: 20150419165357) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "buildings", force: true do |t|
+    t.string   "facility_name"
+    t.integer  "building_num"
+    t.string   "street_name"
+    t.string   "street_type"
+    t.string   "state_name"
+    t.string   "city_name"
+    t.string   "zip_code"
+    t.string   "phone_number"
+    t.string   "structure_class"
+    t.string   "location"
+    t.integer  "av_land"
+    t.integer  "av_bldg"
+    t.integer  "av_total"
+    t.integer  "land_sf"
+    t.integer  "gross_area"
+    t.integer  "yr_built"
+    t.integer  "living_area"
+    t.integer  "num_floors"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "organization"
+    t.string   "tax_id"
+    t.string   "email"
+    t.string   "confirm_email"
+    t.string   "password"
+    t.string   "confirm_password"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone_number"
+    t.string   "job_title"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end
